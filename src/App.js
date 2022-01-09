@@ -180,9 +180,9 @@ transform: "translate(-50%, -50%)"}}/>
 
       </Row>
       </header>
-    <div style={{marginLeft:'30px', marginRight:"30px"}}>
+    <div >
       
-      <div className="con">
+      <div className="container">
        
       <Recipes obj={filterSearch} single={single} search={search} handleSingle={handleSingle} setSearch={setSearch}></Recipes>
       

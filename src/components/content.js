@@ -30,8 +30,8 @@ const Content=({name, image, type, vegan, cuisines, handleSingle})=>{
         <Row xs={1} md={2} className="g-4">
         <Col xs={6} sm={6} md={8} lg={11}>
        
-            <Card style={{ width: '27rem', height: '45rem', margin:'10px'}}>
-                <Card.Img variant="top" src={image} style={{height:"370px", width: "96%", marginLeft:"auto", marginRight:"auto", marginTop:"10px"}} />
+            <Card style={{ width: '22rem', height: '40rem', margin:'10px'}}>
+                <Card.Img variant="top" src={image} style={{height:"300px", width: "96%", marginLeft:"auto", marginRight:"auto", marginTop:"10px"}} />
                 <Card.Body style={{display:"flex", flexDirection:"column", flex:"1"}}>
                     <Card.Title className="cardTitle" style={{textAlign: "center"}}>{name}</Card.Title>
                     <Card.Text style={{textAlign: "center", marginTop:"auto"}}>

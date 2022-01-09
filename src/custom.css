@@ -26,7 +26,7 @@ body{
 }
 
 .cardTitle{
-    font-size:30px;
+    font-size:20px;
     font-weight:700;
     
 }
@@ -84,7 +84,7 @@ body{
 .ing{
     
     border-radius: 50%;
-    width: 23%;
+    width: 29%;
     height: 77%;
     background-color: #3c6e71;
     color: whitesmoke;
@@ -98,7 +98,7 @@ body{
 .min{
     
     border-radius: 50%;
-    width: 23%;
+    width: 29%;
     height: 77%;
     background-color: #8d99ae;
     color: whitesmoke;
@@ -112,7 +112,7 @@ body{
 .serv{
     
     border-radius: 50%;
-    width: 23%;
+    width: 29%;
     height: 77%;
     background-color: #f94144;
     color: whitesmoke;
