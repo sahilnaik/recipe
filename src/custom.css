@@ -84,8 +84,8 @@ body{
 .ing{
     
     border-radius: 50%;
-    width: 29%;
-    height: 77%;
+    width: 55px;
+    height: 55px;
     background-color: #3c6e71;
     color: whitesmoke;
     text-align: center;
@@ -98,8 +98,8 @@ body{
 .min{
     
     border-radius: 50%;
-    width: 29%;
-    height: 77%;
+    width: 55px;
+    height: 55px;
     background-color: #8d99ae;
     color: whitesmoke;
     text-align: center;
@@ -112,8 +112,8 @@ body{
 .serv{
     
     border-radius: 50%;
-    width: 29%;
-    height: 77%;
+    width: 55px;
+    height: 55px;
     background-color: #f94144;
     color: whitesmoke;
     text-align: center;

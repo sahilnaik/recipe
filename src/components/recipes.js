@@ -68,21 +68,22 @@ const Single=({id})=>{
                   </Col>
                  
                 </Row>
+                <br></br>
                 <Row className="infoText">
                   <Col>
                     <p style={{marginLeft:"73%"}}> Ingredients</p>
                   </Col>
                   <Col>
-                    <p>Minutes</p>
+                    <p>  Minutes</p>
                   </Col>
                   <Col>
-                    <p style={{marginRight:"77%"}}>Servings</p>
+                    <p style={{marginRight:"70%"}}>  Servings</p>
                   </Col>
                 </Row>
                
       
               </Col>
-              <Col>
+              <Col xs={12} sm={12} md={9} lg={6}>
                 <img src={recipe.image} alt={recipe.title}></img>
               </Col>
             </Row>
