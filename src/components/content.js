@@ -28,7 +28,7 @@ const Content=({name, image, type, vegan, cuisines, handleSingle})=>{
     return(
         <div style={{marginTop:"60px"}}>
         <Row xs={1} md={2} className="g-4">
-        <Col xs={12} sm={6} md={8} lg={11}>
+        <Col xs={6} sm={6} md={8} lg={11}>
        
             <Card style={{ width: '27rem', height: '45rem', margin:'10px'}}>
                 <Card.Img variant="top" src={image} style={{height:"370px", width: "96%", marginLeft:"auto", marginRight:"auto", marginTop:"10px"}} />
