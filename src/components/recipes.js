@@ -45,13 +45,13 @@ const Single=({id})=>{
         <div style={{marginTop:"100px"}}>
         {recipe && (
           <>
-            <Row >
-              <Col>
+            <Row xs={1} md={2} className="g-4">
+              <Col xs={12} sm={12} md={9} lg={6}>
                 
                 <h1>{recipe.title}</h1>
                 <p>By <i>"{recipe.creditsText}"</i> </p>
                 <Row style={{ paddingTop:"5%"}}>
-                  <Col className="info">
+                  <Col className="info" >
                     <div className="ing">
                     <h1> {recipe.extendedIngredients.length}</h1>
                     </div>
