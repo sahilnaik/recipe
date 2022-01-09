@@ -12,7 +12,7 @@ function refreshPage() {
 const Header=()=>{
     return(
         <div className="head" onClick={refreshPage}>
-            <h1>Recipe n' Stuff</h1>
+            <h1>Papoidiot</h1>
         </div>
     )
 }
