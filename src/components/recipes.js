@@ -4,7 +4,7 @@ import Content from "./content"
 import { useEffect, useState } from "react";
 import { CardGroup, Row, Col } from "react-bootstrap";
 
-const apiKey='280ed3b05ce248309dd8b9db45b2829a'
+const apiKey='5d83094bdc244b50baec46a728571f1d'
 
 
 const Single=({id})=>{
@@ -48,7 +48,7 @@ const Single=({id})=>{
             <Row xs={1} md={2} className="g-4">
               <Col xs={12} sm={12} md={9} lg={6}>
                 
-                <h1>{recipe.title}</h1>
+                <h1 className="title">{recipe.title}</h1>
                 <p>By <i>"{recipe.creditsText}"</i> </p>
                 <Row style={{ paddingTop:"5%"}}>
                   <Col className="info" >
@@ -88,12 +88,12 @@ const Single=({id})=>{
               </Col>
             </Row>
             <hr className="mainHr"></hr>
-            <h2>Ingredients</h2>
+            <h2 className="title">Ingredients</h2>
             {recipe.extendedIngredients.map((ingredient, i) => (
               <li key={i}>{ingredient.original}</li>
             ))}
             <hr className="mainHr"></hr>
-            <h2>Directions</h2>
+            <h2 className="title">Directions</h2>
             {recipe.analyzedInstructions[0].steps.map((step, q) => (<div>
               <b key={q}>Step {step.number}</b>
               
@@ -110,7 +110,7 @@ const Single=({id})=>{
                 </div>
               </Row>
               {step.step}
-              <hr></hr>
+              <hr className="smallHr"></hr>
               </div>
             ))}
 

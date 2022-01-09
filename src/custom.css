@@ -154,3 +154,34 @@ body{
 .mainHr{
     border: 1px rgb(201, 201, 201) solid;
 }
+.dark-content {
+    background: #050624;
+    color: whitesmoke
+  }
+
+ .dark-content .card{
+    background: #0B0C40;
+    color: whitesmoke;
+    border-radius: 15px;
+ }
+ .dark-content .list-group-item{
+    background: #0B0C40;
+    color: whitesmoke;
+ }
+.dark-content .title{
+        color: #FDC30B;
+    }   
+.dark-content .smallHr{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid rgba(201, 201, 201,0.3);
+}
+.dark-content .button{
+    border-color: #E5E7EB;
+}
+.dark-content .button:hover{
+    background-color: #EE853A;
+    border-color: #EE853A;
+    color: #E5E7EB;
+}

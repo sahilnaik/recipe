@@ -1,9 +1,14 @@
 import React, { useEffect, useMemo, useState } from "react";
 import axios from "axios";
+import { Button } from 'react-bootstrap';
 import Recipes from "./components/recipes";
 import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
 
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
+import { faMoon, faSun } from '@fortawesome/free-solid-svg-icons'
+
+import Col from "react-bootstrap/Col";
+import { ThemeContext, themes } from './components/themeContext';
 import './custom.css';
 
 function refreshPage() {
@@ -16,15 +21,38 @@ const Header=()=>{
         </div>
     )
 }
+
 const App=()=>{
-  
+  const [darkMode, setDarkMode] = useState(true);
   const [recipes, setRecipes]=useState([]);
   const [allRecipes, setAllRecipes]= useState([]);
   const [search, setSearch]=useState('');
   const [single, setSingle]=useState('');
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState(false)
-  const apiKey = '280ed3b05ce248309dd8b9db45b2829a'
+  const apiKey = '5d83094bdc244b50baec46a728571f1d'
+
+  const Toggle=()=>{
+    return(
+      <ThemeContext.Consumer>
+            {({ changeTheme }) => (
+              <Button style={{display: "block",
+                marginLeft: "auto", marginTop:"5px",
+                marginRight: "20px"}}
+                color="link"
+                onClick={() => {
+                  setDarkMode(!darkMode);
+                  changeTheme(darkMode ? themes.light : themes.dark);
+                }}
+              >
+                
+                <FontAwesomeIcon icon={darkMode ? faSun : faMoon} />
+                
+              </Button>
+            )}
+          </ThemeContext.Consumer>  
+    )
+}
   const handleSearch=(event)=>{
     event.preventDefault();
    
@@ -93,7 +121,7 @@ if(error){
             </form>
           </Col>
           <Col>
-                
+              <Toggle></Toggle>  
           </Col>
   
         </Row>
@@ -110,6 +138,7 @@ if(error){
   height:"300px",
   width:"300px",
   transform: "translate(-50%, -70%)"}}>API Limit Reached</h1>
+  
   <footer style={{position: "fixed", fontWeight: "bold",
   top: "50%",
   left: "50%",
@@ -175,7 +204,10 @@ transform: "translate(-50%, -50%)"}}/>
           </form>
         </Col>
         <Col>
-              
+        <Toggle>
+       
+           
+        </Toggle>   
         </Col>
 
       </Row>
